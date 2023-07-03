@@ -1,1 +1,221 @@
+@import "~react-datepicker/src/stylesheets/datepicker";
+@import '~react-datepicker/dist/react-datepicker.css';
+@import "~react-datetime/css/react-datetime.css";
+@import "~rc-time-picker/assets/index.css";
 
+
+.modal-dialog {
+  width: 50%;
+  position: fixed;
+  left: 50%;
+  margin-left: -25%;
+
+  &.large-modal {
+    width: 90%;
+    position: fixed;
+    left: 50%;
+    margin-left: -45%;
+  }
+}
+
+mark {
+  background-color: inherit;
+  padding: 0!important
+}
+
+.active mark {
+  background-color: inherit;
+  color: inherit
+}
+
+.rbt-input {
+  height: 36px!important;
+  padding: 0;
+  cursor: text;
+}
+
+.rbt-input-main {
+  min-width: 160px !important;
+}
+
+.custom-checkbox {
+  position:relative;
+  top: -6px
+}
+
+.rbt-input-main {
+  padding-left: 10px !important;
+}
+
+.react-datepicker__time-list {
+  display: block !important;
+}
+
+.html-comma:not(:first-child) {
+  margin-left: -.3em;
+}
+
+.html-comma:empty {
+  display: none;
+}
+
+.html-comma:not(:first-child):before {
+  content: ", ";
+}
+
+.font-resize>.open {
+  z-index: 999 !important;
+  background-color: white !important;
+}
+
+.font-resize {
+  font: inherit !important;
+}
+
+.height-resize {
+  height: 40px !important;
+  width: 200px !important;
+}
+
+.modal-height {
+  min-height: 35vh !important;
+  max-height: 75vh !important;
+  overflow: scroll;
+}
+
+
+.error-animate {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.bottomTabsCss{
+    padding: 20px 20px 15px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 30px 0px;
+    display: inline-block;
+    margin: 0 10px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.minimise_icon{
+    font-size: 50px;
+    position: absolute;
+    right: 36px;
+    top: -14px;
+    color: gray;
+    cursor: pointer;
+}
+
+.maximise-icon{
+  margin-left: 20px;
+  border: 1px solid;
+  padding: 2px 5px;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.modal-header .close {
+  margin-top: -5px!important;
+  font-size: 28px!important;
+  color: gray!important;
+  opacity: 1!important;
+}
+
+.iterableNested_remove, .iterableEdit_remove, .nestedEdit_remove, .iterable_remove {
+  cursor: pointer;
+  position: absolute;
+  top:  0;
+  right: 0;
+  background: #ccc;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  display: table;
+  padding: 3px;
+
+  &span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.nestedEdit_maximise, .nestedEdit_minimise, .iterableEdit_maximise, .iterableEdit_minimise, .iterableNested_maximise, .iterableNested_minimise {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  background: #ccc;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  display: table;
+  padding: 3px;
+
+  &span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.nestedEdit_expand {
+  cursor: pointer;
+  position: absolute;
+  top:  0;
+  right: 60px;
+  background: #ccc;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  display: inline-block;
+  float: right;
+  padding: 3px;
+
+  &span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.title_label {
+  margin: 3px;
+  min-width: 200px;
+}
+
+.css-rqglhn-MuiTable-root {
+  border: 1px solid lightgray;
+}
+
+.MuiButtonBase-root[aria-label="Choose date"]{
+  pointer-events: none;
+}
+
+.crux_head {
+  margin-left: 0.5em;
+}
+.Table_Search_Bar {
+  margin: 0.75em 0;
+}
+.crux-table-column{
+  min-width: 190px;
+  max-width: 262px; 
+}
